@@ -36,6 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1D11BBF71EF415A400A8B845 /* DXHelper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DXHelper.podspec; sourceTree = "<group>"; };
 		1D55BE791EF3FEE900423177 /* libDXHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDXHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D55BE7C1EF3FEE900423177 /* DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXHelper.h; sourceTree = "<group>"; };
 		1D55BE7D1EF3FEE900423177 /* DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXHelper.m; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		1D55BE701EF3FEE900423177 = {
 			isa = PBXGroup;
 			children = (
+				1D11BBF71EF415A400A8B845 /* DXHelper.podspec */,
 				1D55BE7B1EF3FEE900423177 /* DXHelper */,
 				1D55BE7A1EF3FEE900423177 /* Products */,
 			);
@@ -347,6 +349,7 @@
 				1D55BE841EF3FEE900423177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
