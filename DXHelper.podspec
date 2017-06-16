@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "DXHelper"
   s.version      = "1.0"
-  s.summary      = "A short description of DXHelper."
+  s.summary      = "helper for UIView etc. DXHelper."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,9 +25,11 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+    some base code DXHelper
+    just for doorxp private code
                    DESC
 
-  s.homepage     = "http://github.com/doorxp/DXHelper"
+  s.homepage     = "https://github.com/doorxp/DXHelper"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +40,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = "Apache License"
+  s.license      = { :type => "Apache License", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,9 +54,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "" => "doorxp@msn.com" }
+  s.author             = { "doorxp" => "doorxp@msn.com" }
   # Or just: s.author    = ""
-  # s.authors            = { "" => "doorxp@msn.com" }
+  s.authors            = { "doorxp" => "doorxp@msn.com" }
   # s.social_media_url   = "http://twitter.com/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -64,7 +66,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "8.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "8.0"
@@ -117,7 +119,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -129,9 +131,10 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  s.xcconfig = {"GCC_PREPROCESSOR_DEFINITIONS" => "$(USER)"
+ }
   # s.dependency "JSONKit", "~> 1.4"
 
 end
