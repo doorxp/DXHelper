@@ -9,5 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (DXHelper)
+- (__kindof UIViewController *_Nullable)xib:(NSString *_Nullable)nameInStoryboard;
 
+- (void)pushViewController:(UIViewController *_Nullable)viewController animated:(BOOL)animated;
+
+- (nullable UIViewController *)popViewControllerAnimated:(BOOL)animated;
+
+- (void)reloadData;
+- (void)updateData;
 @end

@@ -9,5 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDate (DXHelper)
+- (NSString *)yearMonth;
+- (NSString *)monthDay;
 
+- (NSString *)fullStr;
+- (NSString *)smartStr;
+
+- (NSString *)yearMonthDay;
+
+- (NSInteger)daysToToday;
+
+- (NSString *)format:(NSString *)fmt;
 @end

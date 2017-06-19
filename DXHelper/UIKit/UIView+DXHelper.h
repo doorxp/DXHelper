@@ -20,7 +20,7 @@
 @property (nonatomic, readwrite)CGFloat centerX;
 @property (nonatomic, readwrite)CGFloat centerY;
 
-@property (nonatomic, strong, readonly)UIViewController *viewController;
+@property (nonatomic, strong, readonly)__kindof UIViewController *viewController;
 
 @end
 

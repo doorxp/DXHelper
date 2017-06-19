@@ -9,5 +9,18 @@
 #import <Foundation/Foundation.h>
 
 @interface NSData (DXHelper)
+- (NSData *)gzippedData;
+- (NSData *)gunzippedData;
 
+- (NSData *)encryptWithKey:(NSString *)key;
+- (NSData *)decryptWithKey:(NSString *)key;
+
+- (id)jsonObject;
+
+- (NSString *)string;
+
+- (NSString *)encodeBase64;
+
+- (NSAttributedString*)html:(NSDictionary *)defAttributs;
+- (NSAttributedString *)rtf;
 @end

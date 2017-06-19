@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D0FD5D61EF761C1003E27A0 /* NSNotificationCenter+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5D51EF761C1003E27A0 /* NSNotificationCenter+DXHelper.m */; };
+		1D0FD5D91EF76221003E27A0 /* NSObject+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5D81EF76221003E27A0 /* NSObject+DXHelper.m */; };
+		1D0FD5DC1EF762E2003E27A0 /* NSUserDefaults+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5DB1EF762E2003E27A0 /* NSUserDefaults+DXHelper.m */; };
+		1D0FD5DF1EF7633B003E27A0 /* UIButton+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5DE1EF7633B003E27A0 /* UIButton+DXHelper.m */; };
+		1D0FD5E21EF76419003E27A0 /* NSFetchRequest+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5E11EF76419003E27A0 /* NSFetchRequest+DXHelper.m */; };
+		1D0FD5E51EF7644E003E27A0 /* UIAlertController+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5E41EF7644E003E27A0 /* UIAlertController+DXHelper.m */; };
 		1D55BE7E1EF3FEE900423177 /* DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55BE7D1EF3FEE900423177 /* DXHelper.m */; };
 		1D55BE7F1EF3FEE900423177 /* DXHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D55BE7C1EF3FEE900423177 /* DXHelper.h */; };
 		1D55BE8A1EF3FF5500423177 /* UIColor+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55BE891EF3FF5500423177 /* UIColor+DXHelper.m */; };
@@ -36,7 +42,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1D11BBF71EF415A400A8B845 /* DXHelper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DXHelper.podspec; sourceTree = "<group>"; };
+		1D0FD5D41EF761C1003E27A0 /* NSNotificationCenter+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+DXHelper.h"; sourceTree = "<group>"; };
+		1D0FD5D51EF761C1003E27A0 /* NSNotificationCenter+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+DXHelper.m"; sourceTree = "<group>"; };
+		1D0FD5D71EF76221003E27A0 /* NSObject+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+DXHelper.h"; sourceTree = "<group>"; };
+		1D0FD5D81EF76221003E27A0 /* NSObject+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DXHelper.m"; sourceTree = "<group>"; };
+		1D0FD5DA1EF762E2003E27A0 /* NSUserDefaults+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DXHelper.h"; sourceTree = "<group>"; };
+		1D0FD5DB1EF762E2003E27A0 /* NSUserDefaults+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+DXHelper.m"; sourceTree = "<group>"; };
+		1D0FD5DD1EF7633B003E27A0 /* UIButton+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+DXHelper.h"; sourceTree = "<group>"; };
+		1D0FD5DE1EF7633B003E27A0 /* UIButton+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+DXHelper.m"; sourceTree = "<group>"; };
+		1D0FD5E01EF76419003E27A0 /* NSFetchRequest+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+DXHelper.h"; sourceTree = "<group>"; };
+		1D0FD5E11EF76419003E27A0 /* NSFetchRequest+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+DXHelper.m"; sourceTree = "<group>"; };
+		1D0FD5E31EF7644E003E27A0 /* UIAlertController+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+DXHelper.h"; sourceTree = "<group>"; };
+		1D0FD5E41EF7644E003E27A0 /* UIAlertController+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+DXHelper.m"; sourceTree = "<group>"; };
 		1D55BE791EF3FEE900423177 /* libDXHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDXHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D55BE7C1EF3FEE900423177 /* DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXHelper.h; sourceTree = "<group>"; };
 		1D55BE7D1EF3FEE900423177 /* DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXHelper.m; sourceTree = "<group>"; };
@@ -78,7 +95,6 @@
 		1D55BE701EF3FEE900423177 = {
 			isa = PBXGroup;
 			children = (
-				1D11BBF71EF415A400A8B845 /* DXHelper.podspec */,
 				1D55BE7B1EF3FEE900423177 /* DXHelper */,
 				1D55BE7A1EF3FEE900423177 /* Products */,
 			);
@@ -117,10 +133,18 @@
 				1D55BE981EF4013E00423177 /* NSMutableAttributedString+DXHelper.m */,
 				1D55BE9A1EF4015200423177 /* NSDictionary+DXHelper.h */,
 				1D55BE9B1EF4015200423177 /* NSDictionary+DXHelper.m */,
+				1D0FD5D41EF761C1003E27A0 /* NSNotificationCenter+DXHelper.h */,
+				1D0FD5D51EF761C1003E27A0 /* NSNotificationCenter+DXHelper.m */,
+				1D0FD5D71EF76221003E27A0 /* NSObject+DXHelper.h */,
+				1D0FD5D81EF76221003E27A0 /* NSObject+DXHelper.m */,
 				1D55BE9D1EF4016A00423177 /* NSDate+DXHelper.h */,
 				1D55BE9E1EF4016A00423177 /* NSDate+DXHelper.m */,
 				1D55BEA01EF4017C00423177 /* NSData+DXHelper.h */,
 				1D55BEA11EF4017C00423177 /* NSData+DXHelper.m */,
+				1D0FD5DA1EF762E2003E27A0 /* NSUserDefaults+DXHelper.h */,
+				1D0FD5DB1EF762E2003E27A0 /* NSUserDefaults+DXHelper.m */,
+				1D0FD5E01EF76419003E27A0 /* NSFetchRequest+DXHelper.h */,
+				1D0FD5E11EF76419003E27A0 /* NSFetchRequest+DXHelper.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -134,6 +158,10 @@
 				1D55BE8C1EF3FF7300423177 /* UIView+DXHelper.m */,
 				1D55BEA31EF4025000423177 /* UIViewController+DXHelper.h */,
 				1D55BEA41EF4025000423177 /* UIViewController+DXHelper.m */,
+				1D0FD5DD1EF7633B003E27A0 /* UIButton+DXHelper.h */,
+				1D0FD5DE1EF7633B003E27A0 /* UIButton+DXHelper.m */,
+				1D0FD5E31EF7644E003E27A0 /* UIAlertController+DXHelper.h */,
+				1D0FD5E41EF7644E003E27A0 /* UIAlertController+DXHelper.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -173,7 +201,7 @@
 		1D55BE711EF3FEE900423177 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = doorxp;
 				TargetAttributes = {
 					1D55BE781EF3FEE900423177 = {
@@ -206,16 +234,22 @@
 			files = (
 				1D55BEA21EF4017C00423177 /* NSData+DXHelper.m in Sources */,
 				1D55BE9C1EF4015200423177 /* NSDictionary+DXHelper.m in Sources */,
+				1D0FD5D61EF761C1003E27A0 /* NSNotificationCenter+DXHelper.m in Sources */,
 				1D55BE7E1EF3FEE900423177 /* DXHelper.m in Sources */,
+				1D0FD5DC1EF762E2003E27A0 /* NSUserDefaults+DXHelper.m in Sources */,
 				1D55BE9F1EF4016A00423177 /* NSDate+DXHelper.m in Sources */,
 				1D55BE961EF4012400423177 /* NSAttributedString+DXHelper.m in Sources */,
 				1D55BE901EF400EE00423177 /* NSString+DXHelper.m in Sources */,
+				1D0FD5D91EF76221003E27A0 /* NSObject+DXHelper.m in Sources */,
 				1D55BE931EF4010B00423177 /* NSMutableString+DXHelper.m in Sources */,
+				1D0FD5E51EF7644E003E27A0 /* UIAlertController+DXHelper.m in Sources */,
 				1D55BE991EF4013E00423177 /* NSMutableAttributedString+DXHelper.m in Sources */,
+				1D0FD5E21EF76419003E27A0 /* NSFetchRequest+DXHelper.m in Sources */,
 				1D55BE8D1EF3FF7300423177 /* UIView+DXHelper.m in Sources */,
 				1D55BE8A1EF3FF5500423177 /* UIColor+DXHelper.m in Sources */,
 				1D55BEA51EF4025000423177 /* UIViewController+DXHelper.m in Sources */,
 				1D55BEA91EF402C400423177 /* DXCell.m in Sources */,
+				1D0FD5DF1EF7633B003E27A0 /* UIButton+DXHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +266,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -240,7 +276,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -280,7 +320,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -288,7 +330,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

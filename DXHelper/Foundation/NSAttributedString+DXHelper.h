@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface NSAttributedString (DXHelper)
++ (instancetype)string:(NSString *)str attributes:(NSDictionary *)attributes;
 
+- (id)data;
+
+- (CGSize)sizeForWidth:(CGFloat)width font:(UIFont *)font;
+
+- (void)appending:(NSString *)str attributes:(NSDictionary *)attributes;
 @end

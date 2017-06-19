@@ -89,7 +89,7 @@
     self.center = p;
 }
 
-- (UIViewController*)viewController {
+- (__kindof UIViewController*)viewController {
     
     id controller = self.nextResponder;
     while (!!controller && ![controller isKindOfClass:[UIViewController class]]) {
