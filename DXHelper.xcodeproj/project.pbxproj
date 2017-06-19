@@ -13,6 +13,7 @@
 		1D0FD5DF1EF7633B003E27A0 /* UIButton+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5DE1EF7633B003E27A0 /* UIButton+DXHelper.m */; };
 		1D0FD5E21EF76419003E27A0 /* NSFetchRequest+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5E11EF76419003E27A0 /* NSFetchRequest+DXHelper.m */; };
 		1D0FD5E51EF7644E003E27A0 /* UIAlertController+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5E41EF7644E003E27A0 /* UIAlertController+DXHelper.m */; };
+		1D0FD5ED1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0FD5EC1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.m */; };
 		1D55BE7E1EF3FEE900423177 /* DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55BE7D1EF3FEE900423177 /* DXHelper.m */; };
 		1D55BE7F1EF3FEE900423177 /* DXHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D55BE7C1EF3FEE900423177 /* DXHelper.h */; };
 		1D55BE8A1EF3FF5500423177 /* UIColor+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55BE891EF3FF5500423177 /* UIColor+DXHelper.m */; };
@@ -54,6 +55,10 @@
 		1D0FD5E11EF76419003E27A0 /* NSFetchRequest+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+DXHelper.m"; sourceTree = "<group>"; };
 		1D0FD5E31EF7644E003E27A0 /* UIAlertController+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+DXHelper.h"; sourceTree = "<group>"; };
 		1D0FD5E41EF7644E003E27A0 /* UIAlertController+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+DXHelper.m"; sourceTree = "<group>"; };
+		1D0FD5E91EF76806003E27A0 /* DXHelper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DXHelper.podspec; sourceTree = "<group>"; };
+		1D0FD5EA1EF76811003E27A0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1D0FD5EB1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+DXHelper.h"; sourceTree = "<group>"; };
+		1D0FD5EC1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+DXHelper.m"; sourceTree = "<group>"; };
 		1D55BE791EF3FEE900423177 /* libDXHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDXHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D55BE7C1EF3FEE900423177 /* DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXHelper.h; sourceTree = "<group>"; };
 		1D55BE7D1EF3FEE900423177 /* DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXHelper.m; sourceTree = "<group>"; };
@@ -92,9 +97,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D0FD5E61EF76806003E27A0 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				1D0FD5E71EF76806003E27A0 /* DXHelper */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		1D0FD5E71EF76806003E27A0 /* DXHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1D0FD5E81EF76806003E27A0 /* 1.0 */,
+			);
+			path = DXHelper;
+			sourceTree = "<group>";
+		};
+		1D0FD5E81EF76806003E27A0 /* 1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				1D0FD5E91EF76806003E27A0 /* DXHelper.podspec */,
+			);
+			path = 1.0;
+			sourceTree = "<group>";
+		};
 		1D55BE701EF3FEE900423177 = {
 			isa = PBXGroup;
 			children = (
+				1D0FD5EA1EF76811003E27A0 /* LICENSE */,
+				1D0FD5E61EF76806003E27A0 /* Specs */,
 				1D55BE7B1EF3FEE900423177 /* DXHelper */,
 				1D55BE7A1EF3FEE900423177 /* Products */,
 			);
@@ -145,6 +176,8 @@
 				1D0FD5DB1EF762E2003E27A0 /* NSUserDefaults+DXHelper.m */,
 				1D0FD5E01EF76419003E27A0 /* NSFetchRequest+DXHelper.h */,
 				1D0FD5E11EF76419003E27A0 /* NSFetchRequest+DXHelper.m */,
+				1D0FD5EB1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.h */,
+				1D0FD5EC1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -238,6 +271,7 @@
 				1D55BE7E1EF3FEE900423177 /* DXHelper.m in Sources */,
 				1D0FD5DC1EF762E2003E27A0 /* NSUserDefaults+DXHelper.m in Sources */,
 				1D55BE9F1EF4016A00423177 /* NSDate+DXHelper.m in Sources */,
+				1D0FD5ED1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.m in Sources */,
 				1D55BE961EF4012400423177 /* NSAttributedString+DXHelper.m in Sources */,
 				1D55BE901EF400EE00423177 /* NSString+DXHelper.m in Sources */,
 				1D0FD5D91EF76221003E27A0 /* NSObject+DXHelper.m in Sources */,
