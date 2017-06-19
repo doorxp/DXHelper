@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+@import UIKit;
 
 @interface DXHelper : NSObject
 
 @end
+
+UIKIT_EXTERN __kindof UIViewController *rooter(void);
+UIKIT_EXTERN UIApplication *NSAPP(void);
+UIKIT_EXTERN UIWindow *NSWindow(void);
 
 #ifdef DEBUG
 

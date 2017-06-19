@@ -12,6 +12,19 @@
 
 @end
 
+
+UIApplication *NSAPP(void) {
+    return [UIApplication sharedApplication];
+}
+
+__kindof UIViewController *rooter(void) {
+    return NSWindow().rootViewController;
+}
+
+UIWindow *NSWindow(void) {
+    return NSAPP().delegate.window;
+}
+
 #ifdef DEBUG
 void DEBUGLog(NSString *format, ...) {
     va_list ap;
