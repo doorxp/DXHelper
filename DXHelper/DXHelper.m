@@ -11,3 +11,16 @@
 @implementation DXHelper
 
 @end
+
+#ifdef DEBUG
+void DEBUGLog(NSString *format, ...) {
+    va_list ap;
+    va_start(ap, format);
+    NSString *str = [[NSString alloc] initWithFormat:format arguments:ap];
+    va_end(ap);
+    
+    str = [str stringByAppendingString:@"\n"];
+    
+    printf("%s", str.UTF8String);
+}
+#endif

@@ -12,8 +12,15 @@
 
 @end
 
-#import "UIColor+DXHelper.h"
-#import "UIView+DXHelper.h"
+#ifdef DEBUG
+
+CF_EXTERN_C_BEGIN
+extern void DEBUGLog(NSString *format, ...);
+CF_EXTERN_C_END
+
+#define  NSLog(format,...) DEBUGLog(@"%s[%d] " format ,strrchr(__BASE_FILE__,'/')+1, __LINE__, ##__VA_ARGS__)
+#endif //DEBUG
+
 
 #import "NSString+DXHelper.h"
 #import "NSMutableString+DXHelper.h"
@@ -22,3 +29,18 @@
 #import "NSDictionary+DXHelper.h"
 #import "NSDate+DXHelper.h"
 #import "NSData+DXHelper.h"
+#import "NSNotificationCenter+DXHelper.h"
+#import "NSObject+DXHelper.h"
+#import "NSDate+DXHelper.h"
+#import "NSData+DXHelper.h"
+#import "NSUserDefaults+DXHelper.h"
+#import "NSFetchRequest+DXHelper.h"
+#import "NSFetchedResultsController+DXHelper.h"
+
+
+#import "DXCell.h"
+#import "UIColor+DXHelper.h"
+#import "UIView+DXHelper.h"
+#import "UIViewController+DXHelper.h"
+#import "UIButton+DXHelper.h"
+#import "UIAlertController+DXHelper.h"

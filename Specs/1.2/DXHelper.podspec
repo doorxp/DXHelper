@@ -122,7 +122,7 @@ Pod::Spec.new do |s|
   s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
-  # s.libraries = "iconv", "xml2"
+  s.libraries = "z"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

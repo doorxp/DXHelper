@@ -55,10 +55,11 @@
 		1D0FD5E11EF76419003E27A0 /* NSFetchRequest+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+DXHelper.m"; sourceTree = "<group>"; };
 		1D0FD5E31EF7644E003E27A0 /* UIAlertController+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+DXHelper.h"; sourceTree = "<group>"; };
 		1D0FD5E41EF7644E003E27A0 /* UIAlertController+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+DXHelper.m"; sourceTree = "<group>"; };
-		1D0FD5E91EF76806003E27A0 /* DXHelper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DXHelper.podspec; sourceTree = "<group>"; };
 		1D0FD5EA1EF76811003E27A0 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1D0FD5EB1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+DXHelper.h"; sourceTree = "<group>"; };
 		1D0FD5EC1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+DXHelper.m"; sourceTree = "<group>"; };
+		1D33F2021EF7B6A900730ED4 /* DXHelper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DXHelper.podspec; sourceTree = "<group>"; };
+		1D33F2041EF7B6A900730ED4 /* DXHelper.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = DXHelper.podspec; sourceTree = "<group>"; };
 		1D55BE791EF3FEE900423177 /* libDXHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDXHelper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D55BE7C1EF3FEE900423177 /* DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DXHelper.h; sourceTree = "<group>"; };
 		1D55BE7D1EF3FEE900423177 /* DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DXHelper.m; sourceTree = "<group>"; };
@@ -97,35 +98,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D0FD5E61EF76806003E27A0 /* Specs */ = {
+		1D33F2001EF7B6A900730ED4 /* Specs */ = {
 			isa = PBXGroup;
 			children = (
-				1D0FD5E71EF76806003E27A0 /* DXHelper */,
+				1D33F2011EF7B6A900730ED4 /* 1.0 */,
+				1D33F2031EF7B6A900730ED4 /* 1.2 */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
 		};
-		1D0FD5E71EF76806003E27A0 /* DXHelper */ = {
+		1D33F2011EF7B6A900730ED4 /* 1.0 */ = {
 			isa = PBXGroup;
 			children = (
-				1D0FD5E81EF76806003E27A0 /* 1.0 */,
-			);
-			path = DXHelper;
-			sourceTree = "<group>";
-		};
-		1D0FD5E81EF76806003E27A0 /* 1.0 */ = {
-			isa = PBXGroup;
-			children = (
-				1D0FD5E91EF76806003E27A0 /* DXHelper.podspec */,
+				1D33F2021EF7B6A900730ED4 /* DXHelper.podspec */,
 			);
 			path = 1.0;
+			sourceTree = "<group>";
+		};
+		1D33F2031EF7B6A900730ED4 /* 1.2 */ = {
+			isa = PBXGroup;
+			children = (
+				1D33F2041EF7B6A900730ED4 /* DXHelper.podspec */,
+			);
+			path = 1.2;
 			sourceTree = "<group>";
 		};
 		1D55BE701EF3FEE900423177 = {
 			isa = PBXGroup;
 			children = (
 				1D0FD5EA1EF76811003E27A0 /* LICENSE */,
-				1D0FD5E61EF76806003E27A0 /* Specs */,
+				1D33F2001EF7B6A900730ED4 /* Specs */,
 				1D55BE7B1EF3FEE900423177 /* DXHelper */,
 				1D55BE7A1EF3FEE900423177 /* Products */,
 			);
