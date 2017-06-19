@@ -107,3 +107,12 @@
 }
 
 @end
+
+
+__attribute__((overloadable)) UIColor *HEX(NSString *value) {
+    return UIColor.hex(value);
+}
+
+__attribute__((overloadable)) UIColor *HEX(uint32_t value) {
+    return UIColor.value(value);
+}

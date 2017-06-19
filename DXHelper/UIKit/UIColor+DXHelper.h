@@ -26,3 +26,6 @@ typedef UIColor * (^COLORFUN24)(uint32_t value);
 #define RGB(_r, _g, _b) RGBA(_r, _g, _b, 1.0)
 
 #define GRAY(_c_) RGB(_c_, _c_, _c_)
+
+__attribute__((overloadable)) UIColor *HEX(NSString *value);
+__attribute__((overloadable)) UIColor *HEX(uint32_t value);
