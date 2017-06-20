@@ -27,6 +27,7 @@
 		1D55BEA21EF4017C00423177 /* NSData+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55BEA11EF4017C00423177 /* NSData+DXHelper.m */; };
 		1D55BEA51EF4025000423177 /* UIViewController+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55BEA41EF4025000423177 /* UIViewController+DXHelper.m */; };
 		1D55BEA91EF402C400423177 /* DXCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D55BEA81EF402C400423177 /* DXCell.m */; };
+		1DF449301EF8AC63008181E7 /* NSBundle+DXHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF4492F1EF8AC63008181E7 /* NSBundle+DXHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -85,6 +86,8 @@
 		1D55BEA41EF4025000423177 /* UIViewController+DXHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DXHelper.m"; sourceTree = "<group>"; };
 		1D55BEA71EF402C400423177 /* DXCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXCell.h; sourceTree = "<group>"; };
 		1D55BEA81EF402C400423177 /* DXCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DXCell.m; sourceTree = "<group>"; };
+		1DF4492E1EF8AC63008181E7 /* NSBundle+DXHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DXHelper.h"; sourceTree = "<group>"; };
+		1DF4492F1EF8AC63008181E7 /* NSBundle+DXHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+DXHelper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,8 @@
 				1D0FD5E11EF76419003E27A0 /* NSFetchRequest+DXHelper.m */,
 				1D0FD5EB1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.h */,
 				1D0FD5EC1EF768C8003E27A0 /* NSFetchedResultsController+DXHelper.m */,
+				1DF4492E1EF8AC63008181E7 /* NSBundle+DXHelper.h */,
+				1DF4492F1EF8AC63008181E7 /* NSBundle+DXHelper.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 				1D0FD5E21EF76419003E27A0 /* NSFetchRequest+DXHelper.m in Sources */,
 				1D55BE8D1EF3FF7300423177 /* UIView+DXHelper.m in Sources */,
 				1D55BE8A1EF3FF5500423177 /* UIColor+DXHelper.m in Sources */,
+				1DF449301EF8AC63008181E7 /* NSBundle+DXHelper.m in Sources */,
 				1D55BEA51EF4025000423177 /* UIViewController+DXHelper.m in Sources */,
 				1D55BEA91EF402C400423177 /* DXCell.m in Sources */,
 				1D0FD5DF1EF7633B003E27A0 /* UIButton+DXHelper.m in Sources */,
