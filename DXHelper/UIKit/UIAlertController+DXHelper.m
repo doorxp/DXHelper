@@ -13,7 +13,10 @@
 + (UIAlertControllerAlertCall)alert {
     return ^(NSString *title, NSString *message) {
         
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertController *alert =
+        [UIAlertController alertControllerWithTitle:title
+                                            message:message
+                                     preferredStyle:UIAlertControllerStyleAlert];
         
         return alert;
     };
@@ -22,7 +25,10 @@
 + (UIAlertControllerAlertCall)actionSheet {
     return ^(NSString *title, NSString *message) {
         
-        UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
+        UIAlertController *alert =
+        [UIAlertController alertControllerWithTitle:title
+                                            message:message
+                                     preferredStyle:UIAlertControllerStyleActionSheet];
         
         return alert;
     };
@@ -43,8 +49,10 @@ static UIWindow *window = nil;
         [UIAlertAction actionWithTitle:title
                                  style:self.actions.count>0?UIAlertActionStyleDefault:UIAlertActionStyleCancel
                                handler:^(UIAlertAction * _Nonnull action) {
-                                  NSUInteger btnIndex = [self.actions indexOfObject:action];
-                                   handler(self, btnIndex);
+                                   if(!!handler) {
+                                       NSUInteger btnIndex = [self.actions indexOfObject:action];
+                                       handler(self, btnIndex);
+                                   }
                                    window.rootViewController = nil;
                                    window = nil;
                                }];
@@ -65,8 +73,9 @@ static UIWindow *window = nil;
         
         [window makeKeyAndVisible];
         
-        [window.rootViewController presentViewController:self animated:true completion:nil];
-        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [window.rootViewController presentViewController:self animated:true completion:nil];
+        });
         return self;
     };
 }
