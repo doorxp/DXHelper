@@ -131,4 +131,32 @@
 {
     return [[self class] instancesRespondToSelector:aSelector];
 }
+#ifdef DEBUG
++ (void)dumpMethodsFor:(Class)cls {
+    unsigned int methodCount = 0;
+    Method * methods = class_copyMethodList(cls, &methodCount);
+    
+    for (unsigned int i = 0 ; i<methodCount; i++) {
+        Method method = methods[i];
+        printf("\n\n%s:\n",NSStringFromClass(cls).UTF8String);
+        printf("   %s %s\n", sel_getName(method_getName(method)), method_getTypeEncoding(method));
+    }
+}
+
++ (void)dumpPropertysFor:(Class)cls {
+    unsigned int methodCount = 0;
+    
+    objc_property_t * propertys = class_copyPropertyList(cls, &methodCount);
+    
+    for (unsigned int i = 0 ; i<methodCount; i++) {
+        objc_property_t property = propertys[i];
+        printf("   %s\n", property_getName(property));
+    }
+}
+    
+- (void)dump {
+    [NSObject dumpMethodsFor:self.class];
+    [NSObject dumpPropertysFor:self.class];
+}
+#endif
 @end

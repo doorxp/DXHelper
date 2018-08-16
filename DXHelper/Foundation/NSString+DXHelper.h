@@ -35,4 +35,6 @@
 - (NSAttributedString*)outlineString;
 
 - (UIImage *)qrImage:(CGFloat)size;
+
+//- (NSString *)format:(NSString *)first, ...;
 @end

@@ -31,6 +31,9 @@
     [self bind:data0 other:nil];
 }
 
+- (void)prepareForReuse {
+    
+}
 
 @end
 
@@ -55,6 +58,10 @@
     [self bind:data0 other:nil];
 }
 
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    
+}
 @end
 
 
@@ -79,6 +86,10 @@
 
 - (void)bind:(id)data0 {
     [self bind:data0 other:nil];
+}
+
+- (void)prepareForReuse {
+    [super prepareForReuse];
 }
 
 @end

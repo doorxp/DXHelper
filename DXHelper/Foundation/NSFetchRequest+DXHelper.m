@@ -165,7 +165,7 @@ const char *sorterKey = "arrSorter";
     __weak typeof(self) SELF = self;
     
     NSPredicate *predicate = self.arrFilters.lastObject;
-    if (!predicate) {
+    if (!!predicate) {
         predicate = [NSCompoundPredicate notPredicateWithSubpredicate:predicate];
         [self.arrFilters replaceObjectAtIndex:self.arrFilters.count-1 withObject:predicate];
     }

@@ -11,3 +11,5 @@
 @interface NSFetchedResultsController (DXHelper)
 + (nullable instancetype)fetchRequest:(nullable NSFetchRequest *)fetchRequest managedObjectContext: (nullable NSManagedObjectContext *)context sectionNameKeyPath:(nullable NSString *)sectionNameKeyPath cacheName:(nullable NSString *)name;
 @end
+
+@compatibility_alias NSFetcher NSFetchedResultsController;

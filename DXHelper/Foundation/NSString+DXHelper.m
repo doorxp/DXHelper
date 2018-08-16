@@ -182,4 +182,13 @@
     
     return image;
 }
+
+//- (NSString *)format:(id)arg0,... {
+//    va_list ap;
+//    va_start(ap, arg0);
+//    va_list *ap1 = &ap -1;
+//    NSString *ret = [[NSString alloc] initWithFormat:self arguments:*ap1];
+//    va_end(ap);
+//    return ret;
+//}
 @end

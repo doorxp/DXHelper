@@ -23,6 +23,9 @@
 - (void)bind:(id)data0 other:(id)other;
 - (void)bind:(id)data0;
 
+@optional
+- (void)prepareForReuse;
+
 @end
 
 @interface DXCell : UIView <DXCell>

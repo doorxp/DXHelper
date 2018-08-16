@@ -46,20 +46,20 @@
 }
 
 - (NSDate *)dateForKey:(NSString *)key {
-    NSNumber *value = [self objectForKey:key];
-    if (!value || [value unsignedIntegerValue] == 0) {
+    NSNumber *value = [self valueForKeyPath:key];
+    if (!value || [value isKindOfClass:[NSNull class]] || [value unsignedIntegerValue] == 0) {
         return nil;
     }
     
-    return [NSDate dateWithTimeIntervalSince1970:[value unsignedLongLongValue]];
+    return [NSDate dateWithTimeIntervalSince1970:[value unsignedIntegerValue]];
 }
 
 - (BOOL)boolForKey:(NSString *)key {
-    return [[self objectForKey:key] boolValue];
+    return [[self valueForKeyPath:key] boolValue];
 }
 
 - (int64_t)intForKey:(NSString *)key {
-    NSNumber *o = [self objectForKey:key];
+    NSNumber *o = [self valueForKeyPath:key];
     if ([o isKindOfClass:[NSNumber class]]) {
         return [o unsignedLongLongValue];
     }
@@ -72,7 +72,7 @@
 }
 
 - (float)floatForKey:(NSString *)key {
-    NSNumber *o = [self objectForKey:key];
+    NSNumber *o = [self valueForKeyPath:key];
     if ([o isKindOfClass:[NSNumber class]]) {
         return [o floatValue];
     }
@@ -85,7 +85,7 @@
 }
 
 - (NSString *)stringForKey:(NSString *)key {
-    NSString *ret = self[key];
+    NSString *ret = [self valueForKeyPath:key];
     if ([ret isKindOfClass:[NSString class]]) {
         return ret;
     }

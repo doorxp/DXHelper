@@ -30,3 +30,5 @@ typedef UIAlertController *(^UIAlertControllerShow)(void);
 
 @property (nonatomic ,readonly)UIAlertControllerShow show;
 @end
+
+@compatibility_alias UIAlert UIAlertController;

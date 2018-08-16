@@ -23,7 +23,12 @@ CF_EXTERN_C_BEGIN
 extern void DEBUGLog(NSString *format, ...);
 CF_EXTERN_C_END
 
+#ifndef NSLog
 #define  NSLog(format,...) DEBUGLog(@"%s[%d] " format ,strrchr(__BASE_FILE__,'/')+1, __LINE__, ##__VA_ARGS__)
+#endif
+
+#else
+#define  NSLog(format,...)
 #endif //DEBUG
 
 
@@ -41,7 +46,8 @@ CF_EXTERN_C_END
 #import "NSUserDefaults+DXHelper.h"
 #import "NSFetchRequest+DXHelper.h"
 #import "NSFetchedResultsController+DXHelper.h"
-
+#import "NSFileManager+DXHelper.h"
+#import "NSLayoutAnchor+DXHelper.h"
 
 #import "DXCell.h"
 #import "UIColor+DXHelper.h"

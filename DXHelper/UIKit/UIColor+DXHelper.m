@@ -75,7 +75,9 @@
                 color = RGBA(r, g, b, a/255.0);
             }
             else {
+                #ifdef DEBUG
                 NSAssert(0, @"hex error format!!");
+                #endif//DEBUG
             }
         }
         else {
@@ -89,7 +91,9 @@
                 color = func(cls, sel);
             }
             else {
+#ifdef DEBUG
                 NSAssert(0, @"no named Color");
+#endif //DEBUG
             }
         }
         

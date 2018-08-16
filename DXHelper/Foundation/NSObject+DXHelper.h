@@ -36,4 +36,8 @@
 - (void)onlyCallLast:(SEL)selector object:(id)sender wait:(CGFloat)wait;
 
 - (BOOL)instancesRespondToSelector:(SEL)aSelector;
+
+#ifdef DEBUG
+- (void)dump;
+#endif //DEBUG
 @end
