@@ -48,10 +48,12 @@ CF_EXTERN_C_END
 #import "NSFetchedResultsController+DXHelper.h"
 #import "NSFileManager+DXHelper.h"
 #import "NSLayoutAnchor+DXHelper.h"
-
+#import "NSURL+DXHelper.h"
 #import "DXCell.h"
 #import "UIColor+DXHelper.h"
 #import "UIView+DXHelper.h"
 #import "UIViewController+DXHelper.h"
 #import "UIButton+DXHelper.h"
 #import "UIAlertController+DXHelper.h"
+#import "UIBarButtonItem+DXHelper.h"
+#import "UIApplication+DXHelper.h"

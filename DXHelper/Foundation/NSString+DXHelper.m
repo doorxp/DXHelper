@@ -183,6 +183,10 @@
     return image;
 }
 
+- (NSString *)localized {
+    return NSLocalizedString(self, nil);
+}
+
 //- (NSString *)format:(id)arg0,... {
 //    va_list ap;
 //    va_start(ap, arg0);

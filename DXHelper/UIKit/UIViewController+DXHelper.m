@@ -30,7 +30,8 @@
     if ([self respondsToSelector:@selector(tableView)]) {
         [[(id)self tableView] reloadData];
     }
-    else if ([self respondsToSelector:@selector(collectionView)]) {
+    
+    if ([self respondsToSelector:@selector(collectionView)]) {
         [[(id)self collectionView] reloadData];
     }
 }

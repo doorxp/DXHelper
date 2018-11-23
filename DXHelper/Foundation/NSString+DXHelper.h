@@ -36,5 +36,7 @@
 
 - (UIImage *)qrImage:(CGFloat)size;
 
+@property (nonatomic, readonly, strong)NSString *localized;
+
 //- (NSString *)format:(NSString *)first, ...;
 @end
